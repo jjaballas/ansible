@@ -16,3 +16,6 @@
 //yum module--list
 
 # ansible nodes -m yum -a 'list=atomic-openshift-node'
+
+//check if service is active
+# ansible -i /root/inventory/hosts nodes -a 'systemctl is-active docker'
