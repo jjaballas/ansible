@@ -1,3 +1,7 @@
 
+//ping module
+
+# ansible all -m ping
+
 //URI module
 # ansible nodes -l infra\* -m uri -a 'url=http://ipv4bot.whatismyipaddress.com/ return_content=yes'
