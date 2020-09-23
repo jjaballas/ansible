@@ -9,3 +9,10 @@
 
 //URI module
 # ansible nodes -l infra\* -m uri -a 'url=http://ipv4bot.whatismyipaddress.com/ return_content=yes'
+
+//list yum repos on all nodes
+# ansible nodes -m shell -a"yum repolist"
+
+//yum module--list
+
+# ansible nodes -m yum -a 'list=atomic-openshift-node'
